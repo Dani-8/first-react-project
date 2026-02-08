@@ -1,16 +1,21 @@
 export default function Header() {
     return (
-        <header className="border-b border-gray-800 bg-gray-900/50 backdrop-blur-sm fixed w-full z-50">
+        <header className="fixed top-0 w-full z-50 border-b border-white/10 bg-gray-950/70 backdrop-blur-md">
             <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-                <div className="text-2xl font-bold text-white">Logo</div>
+                {/* Logo with a slight glow */}
+                <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
+                    Logo
+                </div>
 
-                <nav className="hidden md:flex items-center gap-8">
-                    <a href="#features" className="text-gray-300 hover:text-white transition">Features</a>
-                    <a href="#pricing" className="text-gray-300 hover:text-white transition">Pricing</a>
-                    <a href="#contact" className="text-gray-300 hover:text-white transition">Contact</a>
+                {/* Nav Links */}
+                <nav className="hidden md:flex items-center gap-10">
+                    <a href="#features" className="text-sm font-medium text-gray-400 hover:text-indigo-400 transition-colors">Features</a>
+                    <a href="#pricing" className="text-sm font-medium text-gray-400 hover:text-indigo-400 transition-colors">Pricing</a>
+                    <a href="#contact" className="text-sm font-medium text-gray-400 hover:text-indigo-400 transition-colors">Contact</a>
                 </nav>
 
-                <button className="bg-indigo-600 hover:bg-indigo-700 px-5 py-2 rounded-lg font-medium transition">
+                {/* Button with hover lift */}
+                <button className="bg-indigo-600 hover:bg-indigo-500 hover:-translate-y-0.5 text-white px-6 py-2 rounded-full text-sm font-semibold transition-all duration-200 shadow-lg shadow-indigo-500/20">
                     Get Started
                 </button>
             </div>
