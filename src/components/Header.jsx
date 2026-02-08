@@ -2,7 +2,7 @@ export default function Header() {
     return (
         <header className="border-b border-gray-800 bg-gray-900/50 backdrop-blur-sm fixed w-full z-50">
             <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-                <div className="text-2xl font-bold text-white">YourBrand</div>
+                <div className="text-2xl font-bold text-white">Logo</div>
 
                 <nav className="hidden md:flex items-center gap-8">
                     <a href="#features" className="text-gray-300 hover:text-white transition">Features</a>
