@@ -1,11 +1,14 @@
 export default function Header() {
+    const appTitle = import.meta.env.VITE_APP_TITLE;
+
     return (
         <header className="fixed top-0 w-full z-50 border-b border-white/10 bg-gray-950/70 backdrop-blur-md">
             <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
                 {/* Logo with a slight glow */}
                 <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
-                    Logo
+                    {appTitle}
                 </div>
+
 
                 {/* Nav Links */}
                 <nav className="hidden md:flex items-center gap-10">
